@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+body{
+  background-color: hsl(225, 100%, 94%);
+  margin: 0px;
+}
+p{
+  font-family: 'Red Hat Display', sans-serif;
+  margin-top: 0;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.bg{
+  height: 20%;
+  width: 100%;
+  position: relative;
+}
+.box{
+  position: absolute;
+  height: 480px;
+  width: 300px;
+  background-color: white;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 10px 50px rgba(0,0,0,0.15);
+}
+.image-top{
+  width: 300px;
+}
+.image-top img{
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+}
+.bold{
+  font-weight: 900;
+  font-size: 20px;
+  margin-top: 5px;
+  color: hsl(223, 47%, 23%);
+  margin-top: 25px;
+}
+.text-bottom{
+  padding: 0px 20px;
+}
+.text{
+  color: gray;
+  font-size: 12px;
+}
+.text-div{
+  line-height: 18px;
+  padding: 12px;
+  padding-bottom: 0px;
+}
+.subscription-div{
+  display: flex;
+  flex-direction: row;
+  background-color: hsl(0, 0%, 97%);
+  padding: 16px;
+  padding-bottom: 0px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+.subscription-text{
+  display: flex;
+  flex-direction: column;
+  margin-left: 12px;
+}
+.subscription-div img{
+  width: 34px;
+}
+.title{
+  font-weight: 700;
+  font-size: 13px;
+  margin-bottom: 1px;
+}
+.subscription-text-link{
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+}
+.link{
+  text-decoration: underline;
+  color: hsl(223, 47%, 23%);
+  font-size: 13px;
+}
+.subscription-link{
+  display: flex;
+  align-items: center;
+}
+.buttons-div{
+  display: flex;
+  flex-direction: column;
+}
+.proceed{
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 12px;
+  margin-bottom: 15px;
+  box-shadow: 0px 16px 100px hsl(245, 75%, 52%);
+  cursor: pointer;
+}
+.proceed:hover{
+  background-color: hsl(245, 71%, 41%);
+  transition: 0.15s;
+
+}
+.cancel{
+  font-size: 12px;
+  cursor: pointer;
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+.cancel:hover{
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  transition: 0.15s;
+}
+
+@media (max-width:375px) {
+  .bg{
+    width: 0;
+    height: 0;
+  }
+}
